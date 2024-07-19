@@ -2,202 +2,232 @@
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 
 :root {
-    /* Primary Colors */
-    --color-nutmeg: hsl(14, 45%, 36%);
-    --bgcolor-dark-raspberry: hsl(332, 51%, 32%, 0.1);
-    --color-dark-raspberry: hsl(332, 51%, 32%);
-  
-    /* Neutral Colors */
-    --color-white: hsl(0, 0%, 100%);
-    --color-rose-white: hsl(330, 100%, 98%);
-    --color-eggshell: hsl(30, 54%, 90%);
-    --color-light-grey: hsl(30, 18%, 87%);
-    --color-wenge-brown: hsl(30, 10%, 34%);
-    --color-dark-charcoal: hsl(24, 5%, 18%);
-  }
+	/* Primary Colors */
+	--color-nutmeg: hsl(14, 45%, 36%);
+	--bgcolor-dark-raspberry: hsl(332, 51%, 32%, 0.1);
+	--color-dark-raspberry: hsl(332, 51%, 32%);
 
-  * {
-    margin: 0;
-    padding: 0;
-  }
+	/* Neutral Colors */
+	--color-white: hsl(0, 0%, 100%);
+	--color-rose-white: hsl(330, 100%, 98%);
+	--color-eggshell: hsl(30, 54%, 90%);
+	--color-light-grey: hsl(30, 18%, 87%);
+	--color-wenge-brown: hsl(30, 10%, 34%);
+	--color-dark-charcoal: hsl(24, 5%, 18%);
+}
 
-  h1 {
-    font-family: "Young Serif", sans-serif;
-    font-size: 32px;
-    font-weight: 400;
-    color: var(--color-dark-charcoal);
-  }
+* {
+	margin: 0;
+	padding: 0;
+}
 
-  p {
-    font-family: "Outfit", sans-serif;
-    color: var(--color-wenge-brown);
-  }
+h1 {
+	font-family: 'Young Serif', sans-serif;
+	font-size: 32px;
+	font-weight: 400;
+	color: var(--color-dark-charcoal);
+}
 
-  /* li {
+p {
+	font-family: 'Outfit', sans-serif;
+	color: var(--color-wenge-brown);
+}
+
+/* li {
     font-family: "Outfit", sans-serif;
     color: var(--color-dark-raspberry);
   } */
 
-  .bold {
-    font-family: "Outfit", sans-serif;
-    font-weight: bold;
-    color: var(--color-wenge-brown);
-  }
+.bold {
+	font-family: 'Outfit', sans-serif;
+	font-weight: bold;
+	color: var(--color-wenge-brown);
+}
 
-  span {
-    font-family: "Outfit", sans-serif;
-    color: var(--color-wenge-brown);
-    font-weight: 400;
-  }
+span {
+	font-family: 'Outfit', sans-serif;
+	color: var(--color-wenge-brown);
+	font-weight: 400;
+}
 
-  hr {
-    margin: 2rem 0 2rem 0;
-    color: var(--color-rose-white);
-    opacity: 0.5;
-  }
+hr {
+	margin: 2rem 0 2rem 0;
+	color: var(--color-rose-white);
+	opacity: 0.5;
+}
 
-  .value-nutrition {
-    color: var(--color-nutmeg);
-  }
+.value-nutrition {
+	color: var(--color-nutmeg);
+}
 
-  th, td {
-    border-bottom: 1px solid hsl(30, 10%, 34%, 0.5); 
-    padding: 8px; 
-  }
+th,
+td {
+	border-bottom: 1px solid hsl(30, 10%, 34%, 0.5);
+	padding: 8px;
+}
 
-@media screen and (max-width: 500px) {
+body {
+	max-width: 100vw;
+	max-height: 100vh;
+	/* overflow: auto; */
+}
 
-    body {
-        width: 100%;
-        height: 100%;
-    }
-    
-    .header-img {
-        width: 100%;
-        height: 170px;
-    }
+.header-img {
+	width: 100%;
+	height: 170px;
+}
 
-    .container {
-        padding: 1.5rem;
-    }
+.container > :not(.header-img, hr, .img-container) {
+	padding: 1.5rem;
+}
 
-    .header-content {
-        margin-bottom: 1.5rem;
-    }
+.container.preparation {
+	padding: 1rem;
+}
 
-    .header-content h1 {
-        margin-bottom: 1rem;
-    }
+.header-content {
+	margin-bottom: 1.5rem;
+}
 
-    .header-content p {
-        font-size: 15px;
-        color: var(--color-wenge-brown);
-    }
+.header-content h1 {
+	margin-bottom: 1rem;
+}
 
-    .preparation {
-        background-color: var(--bgcolor-dark-raspberry);
-        border-radius: 1rem;
-        padding: 2rem;
-    }
+.header-content p {
+	font-size: 15px;
+	color: var(--color-wenge-brown);
+}
 
-    .preparation li {
-        font-family: "Outfit", sans-serif;
-        color: var(--color-dark-raspberry);
-    }
+.preparation {
+	/* background-color: red; */
+	background-color: var(--bgcolor-dark-raspberry);
+	border-radius: 1rem;
+	padding: 2rem;
+	margin: 0 1rem;
+}
 
-    .preparation-content h3{
-        font-family: "Outfit", sans-serif;
-        color: var(--color-dark-raspberry);
+.preparation li {
+	font-family: 'Outfit', sans-serif;
+	color: var(--color-dark-raspberry);
+}
 
-    }
+.preparation-content h3 {
+	font-family: 'Outfit', sans-serif;
+	color: var(--color-dark-raspberry);
+}
 
+.preparation-content ul {
+	margin: 1rem 0 0 1rem;
+	font-size: 1rem;
+	width: 13rem;
+}
+.preparation-content li {
+	padding: 0 0 0.5rem 1rem;
+}
 
-    .preparation-content ul{
-        margin : 1rem 0 0 1rem;
-        font-size: 1rem;
-        width: 13rem;
-    }
-    .preparation-content li{
-        padding: 0 0 0.5rem 1rem;
-    }
+.ingredients {
+	margin-top: 1.5rem;
+}
 
-    .ingredients {
-        margin-top: 1.5rem;
-    }
+.ingredients h2 {
+	font-family: 'Young Serif', sans-serif;
+	font-weight: 400;
+	color: var(--color-nutmeg);
+	font-size: 1.7rem;
+}
 
-    .ingredients h2 {
-        font-family: "Young Serif", sans-serif;
-        font-weight: 400;
-        color: var(--color-nutmeg);
-        font-size: 1.7rem;
-    }
+.ingredients ul {
+	margin: 1rem 0 0 1.5rem;
+	font-size: 1rem;
+	width: 13rem;
+}
 
-    .ingredients ul {
-    margin : 1rem 0 0 1.5rem;
-    font-size: 1rem;
-    width: 13rem;
-    }
+.ingredients li {
+	padding: 0 0 0.5rem 1rem;
+	font-family: 'Outfit', sans-serif;
+	color: var(--color-nutmeg);
+}
 
-    .ingredients li {
-        padding: 0 0 0.5rem 1rem;
-        font-family: "Outfit", sans-serif;
-        color: var(--color-nutmeg);
-    }
+.instructions {
+	margin-top: 1.5rem;
+}
 
-    .instructions {
-        margin-top: 1.5rem;
-    }
+.instructions h2 {
+	font-family: 'Young Serif', sans-serif;
+	font-weight: 400;
+	color: var(--color-nutmeg);
+	font-size: 1.7rem;
+}
 
-    .instructions h2 {
-        font-family: "Young Serif", sans-serif;
-        font-weight: 400;
-        color: var(--color-nutmeg);
-        font-size: 1.7rem;
-    }
+.instructions ol {
+	font-weight: 800;
+	margin: 1rem 0 0 1.5rem;
+	font-size: 1rem;
+	width: 17rem;
+}
 
-    .instructions ol {
-    font-weight: 800;
-    margin : 1rem 0 0 1.5rem;
-    font-size: 1rem;
-    width: 17rem;
-    }
+.instructions li {
+	padding: 0 0 0.5rem 1rem;
+	font-family: 'Outfit', sans-serif;
+	color: var(--color-nutmeg);
+}
 
-    .instructions li {
-        padding: 0 0 0.5rem 1rem;
-        font-family: "Outfit", sans-serif;
-        color: var(--color-nutmeg);
-    }
+.nutrition {
+	margin-top: 1.5rem;
+}
 
-    .nutrition {
-        margin-top: 1.5rem;
-    }
+.nutrition h2 {
+	font-family: 'Young Serif', sans-serif;
+	font-weight: 400;
+	color: var(--color-nutmeg);
+	font-size: 1.7rem;
+}
 
-    .nutrition h2 {
-        font-family: "Young Serif", sans-serif;
-        font-weight: 400;
-        color: var(--color-nutmeg);
-        font-size: 1.7rem;
-    }
+.nutrition p {
+	font-weight: 400;
+	font-size: 1rem;
+	width: 20rem;
+	margin: 1rem 0 1rem 0;
+}
 
-    .nutrition p {
-        font-weight: 400;
-        font-size: 1rem;
-        width: 20rem;
-        margin: 1rem 0 1rem 0;
-    }
+.nutrition table {
+	font-family: 'Outfit', sans-serif;
+	width: 100%;
+	padding-left: 1rem;
+	border-collapse: collapse;
+}
 
-    
-    .nutrition table {
-        font-family: "Outfit", sans-serif;
-        width: 100%;
-        padding-left: 1rem;
-        border-collapse: collapse;
-        
-    }
-    
-    .nutrition td {
-        color: var(--color-wenge-brown);
-        font-weight: 400;
-        font-size: 1rem;
-    }
+.nutrition td {
+	color: var(--color-wenge-brown);
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+@media screen and (min-width: 480px) {
+	body {
+		/* background-color: red; */
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 2em;
+		/* justify-content: center; */
+	}
+	.container {
+		border-radius: 1em;
+		/* overflow: hidden; */
+		background-color: grey;
+		width: 80%;
+		height: auto;
+	}
+	.img-container {
+		border-top-left-radius: 1em;
+		border-top-right-radius: 1em;
+		overflow: hidden;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		width: 50%;
+	}
 }
