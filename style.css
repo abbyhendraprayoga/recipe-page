@@ -219,34 +219,10 @@ body {
   .img-container {
     overflow: hidden;
   }
-
-  .ingredients ul {
-    width: auto;
-  }
-
-  .instructions ol {
-    width: auto;
-  }
-
-  .nutrition p {
-    width: auto;
-  }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     width: 50%;
-  }
-
-  .ingredients ul {
-    width: auto;
-  }
-
-  .instructions ol {
-    width: auto;
-  }
-
-  .nutrition p {
-    width: auto;
   }
 }
