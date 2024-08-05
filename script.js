@@ -113,14 +113,3 @@ nutritionsList.innerHTML = Nutrition.map((nutrition) => {
   return `<tr><td>${nutrition.name}</td><td><span class="bold value-nutrition">${nutrition.value}</span></td></tr>`;
 }).join("");
 console.log(nutritionsList);
-
-let paragraph = [
-  {
-    paragraph:
-      "The table below shows nutritional values per serving without the additional fillings.",
-  },
-];
-
-nutritionsSection.innerHTML = paragraph.map((paragraph) => {
-  return `<p>${paragraph.paragraph}</p>`;
-});
